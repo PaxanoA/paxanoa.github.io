@@ -10,6 +10,10 @@
     font-family: var(--font);
 }
 
+body{
+    height: 12500px;
+}
+
 /*NAVIGAION MENU START*/
 
 /*Logo adjustment /Landing Page*/
@@ -120,6 +124,7 @@ a:visited, a:active, a:link{
 }
 
 .mainBox1{
+    background: transparent;
     top: 250px;
     position: relative;
     display: flex;
@@ -147,7 +152,28 @@ a:visited, a:active, a:link{
 
 .navBox1 a{
     vertical-align: middle;
-    color: #00ff00;
+    color: var(--title-colors);
     padding-top: 0.5rem;
     text-align: initial;
+}
+
+/*ABOUT INFORMATION*/
+
+.resume{
+    display: flex;
+    position: relative;
+    top: 250px;
+    width: 60%;
+}
+
+#resume{
+    color: var(--text-color);
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/*EXTERNAL LINKS*/
+
+.github a{
+    color: var(--title-colors);
 }
