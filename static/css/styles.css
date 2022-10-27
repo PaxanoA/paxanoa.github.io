@@ -1,7 +1,8 @@
 :root{
     --divBORDER: 2px solid rgb(247, 247, 247);
-    --text-color: rgb(78, 212, 0);
+    --text-color: white;
     --font: 'Courier New', Courier, monospace;
+    --title-colors: #998006;
 }
 
 *{
@@ -20,6 +21,8 @@
 }
 
 /*MENU*/
+
+
 
 .mainBox{
     position: relative;
@@ -87,4 +90,64 @@ a:visited, a:active, a:link{
     top: 15px;
     background-color: transparent;
     top: 25vw;
+}
+
+/*ABOUT*/
+
+.about{
+    display: block;
+    padding-top: 20%;
+    color: var(--text-color);
+}
+
+.about-Title{
+    background: var(--title-colors);
+    border-radius: 20px;
+    height: 75px;
+    width: 150px;
+    align-items: center;
+    display: flex;
+    position: relative;
+}
+
+.about-Title h2{
+    display: flex;
+    position: absolute;
+    background-color: transparent;
+    padding-left: 7%;
+    color: var(--text-color);
+
+}
+
+.mainBox1{
+    top: 250px;
+    position: relative;
+    display: flex;
+    width: 95%;
+    height: 25vh;
+    justify-content: space-evenly;
+}
+
+.navBox1{
+    display: flex;
+    align-items: center;
+    width: 20%;
+    text-align: center;
+    background: transparent;
+}
+
+.navBox1 a:hover{
+    padding-top: 2px;
+    background: transparent;
+    color: var(--text-color);
+    text-decoration: none;
+    
+}
+
+
+.navBox1 a{
+    vertical-align: middle;
+    color: var(--text-color);
+    padding-top: 0.5rem;
+    text-align: initial;
 }
