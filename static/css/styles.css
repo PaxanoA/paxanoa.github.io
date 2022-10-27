@@ -17,7 +17,6 @@
 #logo{
     max-width: 200px;
     max-height: 220px;
-    right: -100px;
 }
 
 /*MENU*/
@@ -31,18 +30,15 @@
 }
 
 .navBox{
-    padding-top: 25px;
-    padding-left: 10px;
-    padding-right: 10px;
+    display: flex;
+    align-items: center;
     width: 20%;
-    height: 20vh;
     text-align: center;
-    top: 50%;
     background: transparent;
 }
 
 .navBox a:hover{
-    padding-top: 50%;
+    padding-top: 2px;
     background: transparent;
     color: var(--text-color);
     text-decoration: none;
@@ -90,5 +86,5 @@ a:visited, a:active, a:link{
     transform: rotate(90deg);
     top: 15px;
     background-color: transparent;
-    padding-top: 25vw;
+    top: 25vw;
 }
