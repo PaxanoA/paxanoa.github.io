@@ -153,27 +153,66 @@ a:visited, a:active, a:link{
 .navBox1 a{
     vertical-align: middle;
     color: var(--title-colors);
-    padding-top: 0.5rem;
     text-align: initial;
 }
 
 /*ABOUT INFORMATION*/
 
-.resume{
+.containerAbout{
     display: flex;
     position: relative;
     top: 250px;
-    width: 60%;
+    min-width: 50%;
+    max-height: 700px;
+    max-width: 100%;
+    justify-content: space-evenly;
+}
+
+.resume{
+    display: flex;
+    position: inherit;
+    max-height: 500px;
+    max-width: 60%;
+    background: var(--title-colors);
+    border-radius: 20%;
 }
 
 #resume{
     color: var(--text-color);
     text-align: justify;
     text-justify: inter-word;
+    background-color: transparent;
+    padding-left: 8%;
+    padding-right: 8%;
+
 }
 
 /*EXTERNAL LINKS*/
 
 .github a{
     color: var(--title-colors);
+}
+
+/*goals and updates*/
+.goals{
+    display: flex;
+    position: inherit;
+    max-width: 30%;
+    background: var(--title-colors);
+    align-items: center;
+    border-radius: 20%;
+}
+
+.updates{
+    color: var(--text-color);
+    text-align: justify;
+    width: 80%;
+    align-self: center;
+    padding-left: 5%;
+    background: transparent;
+
+}
+
+.updates b{
+    background: transparent;
 }
