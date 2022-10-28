@@ -188,9 +188,13 @@ a:visited, a:active, a:link{
 }
 
 /*EXTERNAL LINKS*/
+span{
+    background: transparent;
+}
 
 .github a{
-    color: var(--title-colors);
+    color: black;
+    background: transparent;
 }
 
 /*goals and updates*/
@@ -216,3 +220,28 @@ a:visited, a:active, a:link{
 .updates b{
     background: transparent;
 }
+
+/*CV*/
+
+.cv{
+    display: flex;
+    position: relative;
+    top: 300px;
+    border: 1px solid var(--title-colors);
+    width: max-content;
+    height: max-content;
+    background: var(--title-colors);
+    margin: auto;
+    color: var(--text-color);
+    border-radius: 30%;
+}
+
+.cv p{
+    background: transparent;
+}
+
+.curriculum-vitae a{
+    color: black;
+    background-color: transparent;
+}
+
