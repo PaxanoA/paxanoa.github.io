@@ -1,17 +1,18 @@
 :root{
     --divBORDER: 2px solid rgb(247, 247, 247);
-    --text-color: white;
+    --text-color: #fff;
     --font: 'Courier New', Courier, monospace;
     --title-colors: #998006;
 }
 
 *{
     background-color: #2c2c2c;
-    font-family: var(--font);
+    scroll-behavior: smooth;
 }
 
 body{
-    height: 12500px;
+    height: 100vh;
+
 }
 
 /*NAVIGAION MENU START*/
@@ -22,18 +23,20 @@ body{
 #logo{
     max-width: 200px;
     max-height: 220px;
+    position: inherit;
 }
 
 /*MENU*/
 
+/*NAV BAR*/
 
-
-.mainBox{
-    position: relative;
+.header{
+    position: fixed;
     display: flex;
     width: 95%;
-    height: 25vh;
+    height: 25%;
     justify-content: space-evenly;
+    font-family: var(--font);
 }
 
 .navBox{
@@ -65,183 +68,24 @@ a:visited, a:active, a:link{
 }
 
 
-/*NAVIGATION MENU ENDS*/
+/*landing page/name*/
 
-
-/*MAIN CONTENT*/
-
-/*TITLE*/
-
-.title{
-    color: white;
-    justify-content: center;
-    font-family: var(--font);
-    text-align: center;
-    height: 150px;
-}
-.title h1{
-    font-size: 100px;
-    padding: 0;
-}
-.title p{
-    font-size: 50;
-    padding: 0;
-    top: -25px;
-}
-
-.arrow{
-    transform: rotate(90deg);
-    top: 15px;
-    background-color: transparent;
-    top: 25vw;
-}
-
-/*ABOUT*/
-
-.about{
-    display: block;
-    padding-top: 20%;
-    color: var(--text-color);
-}
-
-.about-Title{
-    background: var(--title-colors);
-    border-radius: 20px;
-    height: 75px;
-    width: 150px;
-    align-items: center;
+.name{
     display: flex;
     position: relative;
+    top: 30vh;
+    color: var(--text-color);
+    font-family: var(--font);
+    align-items: center;
 }
 
-.about-Title h2{
+.name h1{
+    font-size: 75px;
+}
+
+.name p{
     display: flex;
     position: absolute;
-    background-color: transparent;
-    padding-left: 7%;
-    color: var(--text-color);
-
-}
-
-.mainBox1{
-    background: transparent;
-    top: 250px;
-    position: relative;
-    display: flex;
-    width: 95%;
-    height: 25vh;
-    justify-content: space-evenly;
-}
-
-.navBox1{
-    display: flex;
-    align-items: center;
-    width: 20%;
-    text-align: center;
-    background: transparent;
-}
-
-.navBox1 a:hover{
-    padding-top: 2px;
-    background: transparent;
-    color: var(--text-color);
-    text-decoration: none;
-    
-}
-
-
-.navBox1 a{
-    vertical-align: middle;
-    color: var(--title-colors);
-    text-align: initial;
-}
-
-/*ABOUT INFORMATION*/
-
-.containerAbout{
-    display: flex;
-    position: relative;
-    top: 250px;
-    min-width: 50%;
-    max-height: 700px;
-    max-width: 100%;
-    justify-content: space-evenly;
-}
-
-.resume{
-    display: flex;
-    position: inherit;
-    max-height: 500px;
-    max-width: 60%;
-    background: var(--title-colors);
-    border-radius: 20%;
-}
-
-#resume{
-    color: var(--text-color);
+    top: 52%;
     text-align: justify;
-    text-justify: inter-word;
-    background-color: transparent;
-    padding-left: 8%;
-    padding-right: 8%;
-
 }
-
-/*EXTERNAL LINKS*/
-span{
-    background: transparent;
-}
-
-.github a{
-    color: black;
-    background: transparent;
-}
-
-/*goals and updates*/
-.goals{
-    display: flex;
-    position: inherit;
-    max-width: 30%;
-    background: var(--title-colors);
-    align-items: center;
-    border-radius: 20%;
-}
-
-.updates{
-    color: var(--text-color);
-    text-align: justify;
-    width: 80%;
-    align-self: center;
-    padding-left: 5%;
-    background: transparent;
-
-}
-
-.updates b{
-    background: transparent;
-}
-
-/*CV*/
-
-.cv{
-    display: flex;
-    position: relative;
-    top: 300px;
-    border: 1px solid var(--title-colors);
-    width: max-content;
-    height: max-content;
-    background: var(--title-colors);
-    margin: auto;
-    color: var(--text-color);
-    border-radius: 30%;
-}
-
-.cv p{
-    background: transparent;
-}
-
-.curriculum-vitae a{
-    color: black;
-    background-color: transparent;
-}
-
