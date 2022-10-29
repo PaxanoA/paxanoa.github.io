@@ -1,0 +1,88 @@
+:root{
+    /*VARIABLE DEFINITIONS*/
+
+    /*COLORS*/
+    --background1: #1b2631;
+    --background2: #17202a;
+    --font-color1: #fff;
+    --font-color2: #000;
+    --font-family: 'Courier New', Courier, monospace;
+
+    /*BORDERS*/
+    --organizationBorder: 1px solid red;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+/*BODY*/
+
+body{
+    background: linear-gradient(
+        var(--background1),
+        var(--background2)
+    );
+}
+
+/*HEADER /NAV BAR*/
+
+#logo{
+    max-width: 200px;
+    max-height: 220px;
+}
+.header{
+    position: relative;
+    display: flex;
+    width: 95%;
+    height: 25vh;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navBox{
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 20%;
+    text-align: center;
+    font-family: var(--font-family);
+}
+
+.navBox a:hover{
+    padding-top: 50%;
+}
+
+.navBox a:visited, .navBox a:active{
+    text-decoration: none;
+    color: var(--font-color1);
+}
+
+.navBox a{
+    margin: auto;
+}
+
+/*CONTENT*/
+
+.name{
+    display: flex;
+    position: inherit;
+    align-items: center;
+    justify-content: center;
+}
+
+.name h1{
+    display: flex;
+    position: relative;
+    text-align: center;
+    color: var(--font-color1);
+    font-family: var(--font-family);
+    font-size: 50px;
+}
+
+.name p{
+    display: flex;
+    position: absolute;
+    padding-top: 60px;
+    font-family: var(--font-family);
+    color: var(--font-color1);
+}
