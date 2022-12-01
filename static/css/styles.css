@@ -2,11 +2,12 @@
     /*VARIABLE DEFINITIONS*/
 
     /*COLORS*/
-    --background1: #1b2631;
-    --background2: #17202a;
+    --background1: #000000;
+    --background2: #15171a;
     --font-color1: #fff;
     --font-color2: #000;
     --font-family: 'Courier New', Courier, monospace;
+    --title-colors: #08e600;
 
     /*BORDERS*/
     --organizationBorder: 1px solid red;
@@ -14,12 +15,15 @@
 
 *{
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 /*BODY*/
 
+
 body{
-    background: linear-gradient(
+    background-image: linear-gradient(
+        90deg,
         var(--background1),
         var(--background2)
     );
@@ -63,6 +67,10 @@ body{
 
 /*CONTENT*/
 
+.main{
+    display: relative;
+}
+
 .name{
     display: flex;
     position: inherit;
@@ -74,7 +82,7 @@ body{
     display: flex;
     position: relative;
     text-align: center;
-    color: var(--font-color1);
+    color: var(--title-colors);
     font-family: var(--font-family);
     font-size: 50px;
 }
@@ -85,4 +93,88 @@ body{
     padding-top: 60px;
     font-family: var(--font-family);
     color: var(--font-color1);
+}
+
+.information{
+    display: flex;
+    position: relative;
+    color: var(--font-color1);
+    text-align: justify;
+    width: 50vw;
+    margin: auto;
+    font-family: var(--font-family);
+}
+
+.information .github{
+    color: var(--font-color1);
+}
+
+.github a:visited, .github a:active{
+    text-decoration: none;
+    color: var(--title-colors);
+}
+
+
+/*EXPERTISE*/
+
+.expertise{
+    position: relative;
+    text-align: left;
+    margin: auto;
+    top: 10vh;
+    align-items: center;
+    width: 60vw;
+    height: 80vh;
+}
+
+
+.bg-img{
+    display: inline-flex;
+    position: absolute;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    margin: auto;
+    width: 60vw;
+    height: 80vh;
+    top: 4vh;
+    right: 5vh;
+}
+
+.job {
+    background: rgba(0, 0, 0, 0.50);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgb(0, 0, 0);
+    width: 60vw;
+    height: 20vh;
+    margin: auto;
+    top: 5px;
+}
+
+.job h3, .job h4, .job p{
+    text-align: center;
+    color: var(--font-color1);
+    font-family: var(--font-family);
+}
+
+.index-titles{
+    color: var(--title-colors);
+    font-family: var(--font-family);
+    margin: auto;
+}
+
+.index-titles h2{
+    text-align: center;
+}
+
+/*SEPARATION BETWEEN CONTENT */
+.blank{
+    width: 100vw;
+    height: 50vh;
 }
