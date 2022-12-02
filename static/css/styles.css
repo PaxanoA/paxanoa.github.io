@@ -125,14 +125,18 @@ body{
     align-items: center;
     width: 60vw;
     height: 80vh;
+    top: -100px;
 }
 
+img{ /*SOLO PARA EL BORDER RADIUS DE TODAS LAS IMAGENES */
+    border-radius: 8px;
+}
 
 .bg-img{
     display: inline-flex;
     position: absolute;
-    filter: blur(10px);
-    -webkit-filter: blur(10px);
+    filter: brightness(70%) blur(4px);
+    -webkit-filter: brightness(70%) blur(4px);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -173,8 +177,75 @@ body{
     text-align: center;
 }
 
+.job:hover{
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgb(0, 0, 0);
+    width: 60vw;
+    height: 20vh;
+    margin: auto;
+    top: 5px;
+}
+/*PROJECTS*/
+
+.projects-titles{
+    color: var(--title-colors);
+    font-family: var(--font-family);
+    margin: auto;
+}
+
+.projects-titles h2{
+    text-align: center;
+}
+.project-container{
+    display: flex;
+    position: relative;
+    top: -100px;
+}
+
+.project{
+    background: rgba(9, 212, 19, 0.5);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgb(0, 0, 0);
+    width: 20%;
+    height: 280px;
+    color: var(--font-color1);
+    display: flex;
+    position: inherit;
+    align-items: baseline;
+    margin: auto;
+    justify-content: space-evenly;
+    left: -50px;
+}
+
+.project:hover{
+    background: rgba(9, 212, 19, 0.8);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgb(0, 0, 0);
+    width: 20%;
+    height: 280px;
+    color: var(--font-color1);
+    display: flex;
+    position: inherit;
+    align-items: baseline;
+    margin: auto;
+    justify-content: space-evenly;
+    left: -50px;
+}
 /*SEPARATION BETWEEN CONTENT */
 .blank{
+    display: flex;
+    position: inherit;
     width: 100vw;
-    height: 50vh;
+    height: 300px;
+    z-index: -2;
 }
